@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = parseInt(prompt("Enter a number: "));
+        temp = number;
+        result = " ";
+        let rem = 0;
+        while(number>0){
+            rem = number % 10;
+            result += rem;
+            number = parseInt(number / 10);
+        } 
+        document.write((temp == parseInt(result)) ? "Palindrome" : "Not a Palindrome");
+    </script>
+</body>
+</html>
